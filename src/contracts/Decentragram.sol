@@ -45,7 +45,7 @@ contract Decentragram {
     emit ImageCreated(imageCount,_imgHash , _desc, 0, msg.sender);
   }
 
-  // tip posts
+  // tip images
   function tipImages(uint _id) public payable{
     require(_id>0 && _id<=imageCount);
     Image memory _image = images[_id];
